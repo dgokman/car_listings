@@ -15,7 +15,7 @@
 
   <p>
     <%= f.label :manufacturer %><br>
-    <%= f.text_field :manufacturer_id, size: "40x1" %>
+    <%= f.collection_select(:manufacturer_id, Manufacturer.all, :id, :name) %>
   </p>
 
   <p>

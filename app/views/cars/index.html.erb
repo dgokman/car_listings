@@ -1,6 +1,9 @@
 <h1>List of Cars</h1>
   <% @cars.each do |car| %>
-    <li><%= car.manufacturer %>, Color: <%= car.color %>, Year: <%= car.year %>, Mileage: <%= car.mileage %><br><%= car.description %></li>
+    <li><%= car.manufacturer.name %>, Color: <%= car.color %>, Year: <%= car.year %>, Mileage: <%= car.mileage %>
+    <% unless car.description == "" %>
+     Description: <%= car.description %>
+    <% end %></li>
   <% end %>
 <br>
 <%= link_to "Add Car", new_car_path %><br>
