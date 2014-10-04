@@ -2,3 +2,6 @@
   <% @manufacturers.each do |manufacturer| %>
     <li><%= manufacturer.name %> - <%= manufacturer.country %></li>
   <% end %>
+<br>
+<%= link_to "Add Manufacturer", new_manufacturer_path %><br>
+<%= link_to "Car Index", cars_path %>

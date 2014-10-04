@@ -1,0 +1,44 @@
+<%= form_for @car do |f| %>
+
+  <% if @car.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@car.errors.count, "error") %> prohibited
+      this article from being saved:</h2>
+
+    <ul>
+      <% @car.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+  <p>
+    <%= f.label :manufacturer %><br>
+    <%= f.text_field :manufacturer_id, size: "40x1" %>
+  </p>
+
+  <p>
+    <%= f.label :color %><br>
+    <%= f.text_field :color, size: "40x1" %>
+  </p>
+
+  <p>
+    <%= f.label :year %><br>
+    <%= f.date_field :year, size: "10x1" %>
+  </p>
+
+  <p>
+    <%= f.label :mileage %><br>
+    <%= f.number_field :mileage, size: "10x1" %>
+  </p>
+
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_area :description, size: "40x10" %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
