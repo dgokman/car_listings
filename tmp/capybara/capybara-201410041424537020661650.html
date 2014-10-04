@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CarListings</title>
+  <link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet" />
+  <script data-turbolinks-track="true" src="/assets/application.js"></script>
+  
+</head>
+<body>
+<p class="notice"></p>
+<p class="alert"></p>
+<form accept-charset="UTF-8" action="/cars" class="new_car" id="new_car" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+
+
+  <p>
+    <label for="car_manufacturer">Manufacturer</label><br>
+    <select id="car_manufacturer_id" name="car[manufacturer_id]"><option value="24">Saab</option></select>
+  </p>
+
+  <p>
+    <label for="car_color">Color</label><br>
+    <input id="car_color" name="car[color]" size="40x1" type="text" />
+  </p>
+
+  <p>
+    <label for="car_year">Year</label><br>
+    <input id="car_year" name="car[year]" size="10x1" type="date" />
+  </p>
+
+  <p>
+    <label for="car_mileage">Mileage</label><br>
+    <input id="car_mileage" name="car[mileage]" size="10x1" type="number" />
+  </p>
+
+  <p>
+    <label for="car_description">Description</label><br>
+    <textarea cols="40" id="car_description" name="car[description]" rows="10">
+</textarea>
+  </p>
+
+  <p>
+    <input name="commit" type="submit" value="Create Car" />
+  </p>
+</form>
+
+</body>
+</html>

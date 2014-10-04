@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CarListings</title>
+  <link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet" />
+  <script data-turbolinks-track="true" src="/assets/application.js"></script>
+  
+</head>
+<body>
+<p class="notice"></p>
+<p class="alert"></p>
+<form accept-charset="UTF-8" action="/manufacturers" class="new_manufacturer" id="new_manufacturer" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+
+
+  <p>
+    <label for="manufacturer_manufacturer">Manufacturer</label><br>
+    <input id="manufacturer_name" name="manufacturer[name]" size="40x1" type="text" />
+  </p>
+
+  <p>
+    <label for="manufacturer_country">Country</label><br>
+    <input id="manufacturer_country" name="manufacturer[country]" size="40x1" type="text" />
+  </p>
+
+  <p>
+    <input name="commit" type="submit" value="Create Manufacturer" />
+  </p>
+</form>
+
+</body>
+</html>
